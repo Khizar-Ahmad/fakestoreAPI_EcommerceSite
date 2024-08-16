@@ -579,17 +579,6 @@ export default function Navbar(){
                         <div className="w-4/6 mx-auto mt-2"><input className="w-[95%] h-[20px] text-[12px] text-gray-400 pl-1 rounded-lg" type="text" value={priceTextField} placeholder={pricePlaceHolder} onChange={(e)=>{
                         
                             setPriceTextField(e.target.value);
-                        }} onKeyDown={(e)=>{
-                            console.log(e.key);
-                            console.log(typeof(e.key));
-                            if(e.key=== '1' || e.key=== '2'  || e.key=== '3' || e.key=== '4' || e.key=== '5' || e.key=== '6' || e.key=== '7' || e.key=== '8' || e.key=== '9' || e.key=== '0' || e.key=== '.' || e.key==='Backspace'){
-                               
-                            }else{
-                                console.log(e.key);
-                                setPriceTextField('');
-                                return alert("Error! Price must be a number, decimal number is also allowed");
-
-                            }
                         }}/></div>
                 </div>
             </div>      
